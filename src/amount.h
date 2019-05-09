@@ -139,6 +139,8 @@ public:
         READWRITE(amount);
     }
 };
+/** Amount in satoshis (Can be negative) */
+typedef int64_t CAmount;
 
 static constexpr Amount SATOSHI = Amount::satoshi();
 static constexpr Amount CASH = 100 * SATOSHI;

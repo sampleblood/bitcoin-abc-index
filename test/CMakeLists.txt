@@ -55,8 +55,7 @@ add_custom_target(check-functional
 		./functional/test_runner.py
 	DEPENDS
 		../src/bitcoind
-		../src/bitcoin-cli
-		${CMAKE_CURRENT_BINARY_DIR}/functional/test_runner.py
+        ${CMAKE_CURRENT_BINARY_DIR}/functional/test_runner.py
 		${CMAKE_CURRENT_BINARY_DIR}/functional/create_cache.py
 )
 
