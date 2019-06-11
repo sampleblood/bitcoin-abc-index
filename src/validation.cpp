@@ -4987,7 +4987,7 @@ bool CVerifyDB::VerifyDB(const Config &config, CCoinsView *coinsview,
                 nCoinCacheUsage) {
             assert(coins.GetBestBlock() == pindex->GetBlockHash());
             DisconnectResult res =
-                g_chainstate.DisconnectBlock(block, pindex, coins);
+                g_chainstate.DisconnectBlock(block, pindex, coins, true);
             if (res == DISCONNECT_FAILED) {
                 return error("VerifyDB(): *** irrecoverable inconsistency in "
                              "block data at %d, hash=%s",
@@ -5017,7 +5017,7 @@ bool CVerifyDB::VerifyDB(const Config &config, CCoinsView *coinsview,
     }
 
     // check level 4: try reconnecting blocks
-    if (nCheckLevel >= 4) {
+    if (false && nCheckLevel >= 4) {
         CBlockIndex *pindex = pindexState;
         while (pindex != chainActive.Tip()) {
             boost::this_thread::interruption_point();
@@ -5036,7 +5036,7 @@ bool CVerifyDB::VerifyDB(const Config &config, CCoinsView *coinsview,
                     pindex->nHeight, pindex->GetBlockHash().ToString());
             }
             if (!g_chainstate.ConnectBlock(config, block, state, pindex,
-                                           coins)) {
+                                           coins, true)) {
                 return error(
                     "VerifyDB(): *** found unconnectable block at %d, hash=%s",
                     pindex->nHeight, pindex->GetBlockHash().ToString());
