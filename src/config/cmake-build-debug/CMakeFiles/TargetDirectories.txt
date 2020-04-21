@@ -1,0 +1,2 @@
+/Users/trackmingwanjiaming/Documents/coin-d/bitcoind/BCH/bitcoin-abc/src/config/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/trackmingwanjiaming/Documents/coin-d/bitcoind/BCH/bitcoin-abc/src/config/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,81 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/trackmingwanjiaming/Documents/coin-d/bitcoind/BCH/bitcoin-abc/src/config
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- The CXX compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for include file endian.h
+-- Looking for include file endian.h - not found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for include file byteswap.h
+-- Looking for include file byteswap.h - not found
+-- Looking for bswap_16
+-- Looking for bswap_16 - not found
+-- Looking for bswap_32
+-- Looking for bswap_32 - not found
+-- Looking for bswap_64
+-- Looking for bswap_64 - not found
+-- Looking for include file sys/select.h
+-- Looking for include file sys/select.h - found
+-- Looking for include file sys/prctl.h
+-- Looking for include file sys/prctl.h - not found
+-- Looking for __builtin_clz
+-- Looking for __builtin_clz - found
+-- Looking for __builtin_clzl
+-- Looking for __builtin_clzl - found
+-- Looking for __builtin_clzll
+-- Looking for __builtin_clzll - found
+-- Looking for __builtin_popcount
+-- Looking for __builtin_popcount - found
+-- Looking for M_ARENA_MAX
+-- Looking for M_ARENA_MAX - not found
+-- Looking for malloc_info
+-- Looking for malloc_info - not found
+-- Looking for strnlen
+-- Looking for strnlen - found
+-- Looking for daemon
+-- Looking for daemon - found
+-- Looking for getentropy
+-- Looking for getentropy - not found
+-- Looking for getentropy
+-- Looking for getentropy - found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for freeifaddrs
+-- Looking for freeifaddrs - found
+-- Performing Test HAVE_SYS_GETRANDOM
+-- Performing Test HAVE_SYS_GETRANDOM - Failed
+-- Performing Test HAVE_SYSCTL_ARND
+-- Performing Test HAVE_SYSCTL_ARND - Failed
+-- Performing Test CHAR_EQUALS_INT8
+-- Performing Test CHAR_EQUALS_INT8 - Failed
+-- Performing Test HAVE_FUNC_ATTRIBUTE_VISIBILITY
+-- Performing Test HAVE_FUNC_ATTRIBUTE_VISIBILITY - Success
+-- Performing Test HAVE_FUNC_ATTRIBUTE_DLLEXPORT
+-- Performing Test HAVE_FUNC_ATTRIBUTE_DLLEXPORT - Failed
+-- Checking prototype __fdelt_warn for FDELT_PROTOTYPE_LONG_UNSIGNED_INT - False
+-- Looking for EVP_MD_CTX_new
+-- Looking for EVP_MD_CTX_new - not found
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.10)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/trackmingwanjiaming/Documents/coin-d/bitcoind/BCH/bitcoin-abc/src/config/cmake-build-debug

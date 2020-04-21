@@ -69,9 +69,12 @@ class TestNode():
         self.name = "testnode-{}".format(i)
         self.rpc_timeout = timewait
         self.binary = bitcoind
+        print("Mining blocks...", self.binary)
+        '''
         if not os.path.isfile(self.binary):
             raise FileNotFoundError(
                 "Binary '{}' could not be found.\nTry setting it manually:\n\tBITCOIND=<path/to/bitcoind> {}".format(self.binary, sys.argv[0]))
+        '''
         self.coverage_dir = coverage_dir
         if extra_conf is not None:
             append_config(datadir, extra_conf)
@@ -92,10 +95,11 @@ class TestNode():
             "-uacomment=" + self.name,
             "-noprinttoconsole",
         ]
-
+        '''
         if not os.path.isfile(bitcoin_cli):
             raise FileNotFoundError(
                 "Binary '{}' could not be found.\nTry setting it manually:\n\tBITCOINCLI=<path/to/bitcoin-cli> {}".format(bitcoin_cli, sys.argv[0]))
+        '''
         self.cli = TestNodeCLI(bitcoin_cli, self.datadir)
         self.use_cli = use_cli
 

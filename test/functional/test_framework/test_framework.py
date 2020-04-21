@@ -516,7 +516,7 @@ class BitcoinTestFramework():
                 # Remove empty wallets dir
                 os.rmdir(cache_path(i, 'wallets'))
                 for entry in os.listdir(cache_path(i)):
-                    if entry not in ['chainstate', 'blocks']:
+                    if entry not in ['chainstate', 'blocks', 'indexes']:
                         os.remove(cache_path(i, entry))
 
         for i in range(self.num_nodes):
